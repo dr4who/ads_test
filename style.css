@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #007BFF;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skills-grid h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.skills-grid ul {
+    list-style: none;
+    text-align: center;
+}
+
+/* Projects Section */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-list article {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-list article:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-list h3 {
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Experience Section */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-list article {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-list h3 {
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #007BFF;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Ad Container */
+.ad-container {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    .skills-grid, .project-list, .experience-list {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
